@@ -1,0 +1,40 @@
+{
+	"commandes": [
+		{"date": "12/01/18",
+		 "numcommande": "18927578",
+		 "numcptclient": "8027618",
+		 "nomclient": "Mme Pierre",
+		 "commercial": "Micka",
+		 "transfert": "****",
+		 "couleur": "Vert",
+		 "credit": "Oui",
+		 "essai": "non",
+		 "destlivraison": "Alliance Santé",
+		 "step"	: [1,1,1,0,0,0]
+		},
+		{"date": "13/01/18",
+		 "numcommande": "18908678",
+		 "numcptclient": "801278218",
+		 "nomclient": "Mme Jacques",
+		 "commercial": "Maxime",
+		 "transfert": "****",
+		 "couleur": "Noir",
+		 "credit": "Oui",
+		 "essai": "non",
+		 "destlivraison": "Alliance Santé",
+		 "step"	: [1,1,1,1,0,0]	
+		},
+		{"date": "14/01/18",
+		 "numcommande": "97657578",
+		 "numcptclient": "1627618",
+		 "nomclient": "Mme Dubois",
+		 "commercial": "Timon",
+		 "transfert": "****",
+		 "couleur": "Bleu",
+		 "credit": "non",
+		 "essai": "Oui",
+		 "destlivraison": "Synchosanté",
+		 "step"	: [1,1,1,1,1,0]
+		}
+	]
+}
