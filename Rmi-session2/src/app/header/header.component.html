@@ -1,29 +1,21 @@
-<header>		
-	<div class="header--border1">
-		<h1>Gestionnaire de commande</h1>
+<header class="header container-fluid">
+	<div class="row">		
+		<div class="header-logo col"><img src='../../assets/img/logo.png'></div>
+		<div class="header-title col-6" >
+			<h1>Gestionnaire de commande</h1>
+		</div>
+		<div class="header-nav col">
+			<ul>
+				<li>
+					<a href="statistics.html"><fa-icon [icon]="['fas', 'chart-bar']" size="2x"></fa-icon></a>
+				</li>
+				<li>
+					<a href="admin.html"><fa-icon [icon]="['fas', 'cog']" size="2x"></fa-icon></a>
+				</li>
+				<li>
+					<a href="connexion.html"><fa-icon [icon]="['fas', 'sign-out-alt']" size="2x"></fa-icon></a>
+				</li>
+			</ul>
+		</div>
 	</div>
-	<div class="header--border2"></div>
-
-	<div class="border--logo"></div>
-
-	<div class="logo-header"></div>
-
-	<div class="logo--header"></div>
-
-	<div class="header--border3">
-		<span>Bonjour<span id="user"></span>!</span>
-		<ul>
-
-			<li>
-				<a href="statistics.html"><fa-icon [icon]="['fas', 'chart-bar']" size="2x"></fa-icon></a>
-			</li>
-			<li>
-				<a href="admin.html"><fa-icon [icon]="['fas', 'cog']" size="2x"></fa-icon></a>
-			</li>
-			<li>
-				<a href="connexion.html"><fa-icon [icon]="['fas', 'sign-out-alt']" size="2x"></fa-icon></a>
-			</li>
-		</ul>
-	</div>
-
 </header>
