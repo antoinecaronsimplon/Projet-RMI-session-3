@@ -1,73 +1,30 @@
-.logo-header{
-	background-image: url('../../assets/img/logo.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 10em;
-	height: 8em;
-	position: absolute;
-	left: 1%;
-	top: 0;
-}
-
-.border--logo{
-	border: 1px solid rgb(100, 100, 100, 0.5);
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	background-color: rgb(251, 251, 251);
-	position: absolute;
-	width: 10em;
-	height: 8.5em;
-	left: 2%;
-	top: 0;
-}
-
-.header--border1{
-	border: 1px solid rgb(100, 100, 100, 0.5);
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	background-color: rgb(44, 129, 218);
-	height: 5em; 
-}
-
-.header--border1 h1{
+.header{
+	border-bottom: 1px solid #AAAA;
 	text-align: center;
-	position: relative;
-	color: white;
-	text-transform: uppercase;
 }
 
-.header--border2{
-	border: 1px solid rgb(100, 100, 100, 0.5);
-	background-color: rgb(248, 248, 248);
-	height: 3em;
-	position: relative;
-	display: flex;
+.header-logo img{
+	width: 60px;
+	height: 60px;
+	padding: 5px;
+	background: #FFF;
+}
+fa-icon{
+	color: #555;
 }
 
-.header--border2 button{
-	margin-left: 90%;
-	margin-top: 0.7em;
-	margin-right: 5%;
-	margin-left-bottom: auto;
-	color: white;
-	background-color: rgb(44, 129, 218);
+fa-icon:hover{
+	color: #2c81da;
 }
-
-.header--border3{
-	border: 1px solid rgb(100, 100, 100, 0.5);
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	background-color: rgb(251, 251, 251);
-	position: absolute;
-	width: 10em;
-	height: 8.5em;
-	right: 2%;
-	top: 0;
-	display: inline-block;
+.header-title{
+	color: #555;
 }
-
-
-.header--border3 ul li{
+.header-nav{
+	padding-top: 10px;
+	width: 10%;
+}
+.header-nav li{
+	padding-left: 10px;
+	display: inline;
 	list-style: none;
-	display: inline-block
 }
