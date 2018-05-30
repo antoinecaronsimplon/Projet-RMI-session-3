@@ -10,6 +10,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faChartBar } from '@fortawesome/free-solid-svg-icons';
 import { faCog } from '@fortawesome/free-solid-svg-icons';
 import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
+import { AdminComponent } from './admin/admin.component';
 
 library.add(faChartBar);
 library.add(faCog);
@@ -19,6 +20,7 @@ library.add(faSignOutAlt);
   declarations: [
     AppComponent,
     HeaderComponent,
+    AdminComponent,
     ArrayComponent
   ],
   imports: [
