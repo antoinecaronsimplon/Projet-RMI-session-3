@@ -5,14 +5,15 @@
 		</div>	
 	</div>
 	<div class="container mt-5 input-group">
-	  <div class="row input-group-prepend">
+	  <!-- <div class="row input-group-prepend">
 	     <div class="col input-group-text text-commande" id="#">N° Commande:</div>
-	  </div>
-	  <input type="text" placeholder="Recherche" class="col-3 form-control">
+	  </div> -->
+	  <input type="text" placeholder="N° Com. recherche" class="col-2 form-control">
+	  <button class="btn-primary col-1">OK</button>
 	</div>
 	<div class="container pt-2">
 		<div class=" row mr-1 justify-content-end">
-			<button class="btn-primary col-1 " data-filter="*">ADV</button>
+			<button class="btn-primary col-1 active" data-filter="*">ADV</button>
 			<button class="btn-primary col-2 " data-filter="parametrage">Parametrage</button>
 			<button class="btn-primary col-2 " data-filter="hard">Hardware</button>
 			<button class="btn-primary col-2 " data-filter="logistique">Logistique</button>
@@ -37,7 +38,28 @@
 								<td>18927578</td>
 								<td>8027618</td>
 								<td>Mme Pierre</td>
-								<td>****</td>
+								<td>
+									<div class="row">
+										<div class="col-1">
+											<div class="step"></div>
+										</div>
+										<div class=" col-1 ">
+											<div class="step"></div>
+										</div>
+										<div class=" col-1 ">
+											<div class="step"></div>
+										</div>
+										<div class=" col-1 ">
+											<div class="step"></div>
+										</div>
+										<div class=" col-1 ">
+											<div class="step"></div>
+										</div>
+										<div class=" col-1">
+											<div class="step red"></div>
+										</div>
+									</div>
+								</td>
 		    				</tr>
 		    				<tr>
 		      					<th scope="row">2</th>
@@ -85,14 +107,24 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	<!-- <nav aria-label="Page navigation example">
+  		<ul class="pagination">
+    		<li class="page-item">
+      			<a class="page-link" href="#" aria-label="Previous">
+       			 <span aria-hidden="true">&laquo;</span>
+        		 <span class="sr-only">Previous</span>
+      			</a>
+    		</li>
+    		<li class="page-item"><a class="page-link" href="#">1</a></li>
+    		<li class="page-item"><a class="page-link" href="#">2</a></li>
+    		<li class="page-item"><a class="page-link" href="#">3</a></li>
+    		<li class="page-item"><a class="page-link" href="#" aria-label="Next">
+        	<span aria-hidden="true">&raquo;</span>
+        	<span class="sr-only">Next</span>
+      		</a>
+    		</li>
+ 	 	</ul>
+	</nav> -->
+</div>
 </main>
-	<!-- <div class="container recherche">
-		<form class="row justify-content-start">
-			<div class=" col-3 recherche-numero">
-			N° Commande:
-			</div>
-			<div class="w-100"></div>
-			<input class=" col-3 recherche-input" type="text" name="recherche" placeholder="Recherche">
-			</form>
-	</div> -->
+

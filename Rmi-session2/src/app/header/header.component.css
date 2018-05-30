@@ -3,28 +3,38 @@
 	text-align: center;
 }
 
+.header-logo {
+	padding-top: 10px;
+}
 .header-logo img{
-	width: 60px;
-	height: 60px;
-	padding: 5px;
+	width: 70px;
+	height: 70px;
 	background: #FFF;
 }
 fa-icon{
 	color: #555;
 }
 
-fa-icon:hover{
+fa-icon:hover, fa-icon:active{
 	color: #2c81da;
 }
+
 .header-title{
 	color: #555;
+	padding-top: 25px;
 }
 .header-nav{
-	padding-top: 10px;
-	width: 10%;
+	/* padding-top: px; */
+	/* width: 10%; */
+	font-size: 1.5em;
 }
 .header-nav li{
-	padding-left: 10px;
+	padding-right: 15px;
 	display: inline;
 	list-style: none;
+}
+
+.header-message{
+	padding-top: 15px;
+	font-size: 0.6em;
 }
