@@ -20,7 +20,7 @@ library.add(faSignOutAlt);
   declarations: [
     AppComponent,
     HeaderComponent,
-    AdminComponent
+    AdminComponent,
     ArrayComponent
   ],
   imports: [
