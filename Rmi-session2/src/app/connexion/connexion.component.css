@@ -1,16 +1,16 @@
-.logo-img{
+.logo{
 	height: 400px;
 	width: 400px;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	/* margin-top: 50px;
+	margin-bottom: 50px; */
 }
 
-.logo{
+/* .logo{
 	margin: 0 auto;
 	text-align: center;
-}
+} */
 
-.connexion{
+/* .connexion{
 	display: flex;
 	flex-direction: column;
 	width: 245px;
@@ -22,4 +22,4 @@
 	margin-top: 30px;
 	margin-left: 70.5px;
 	margin-right: 70.5px;
-}
+} */
