@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpModule } from '@angular/http';
+import { UserService } from '../service/user.service';
+import { HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-array',
@@ -8,10 +11,11 @@ import { Component, OnInit } from '@angular/core';
 export class ArrayComponent implements OnInit {
 
 	titre = 'Liste de Commande';
-
-  constructor() { }
-
+  data = 'bdd.json';
+  constructor( ) { }
+ 
   ngOnInit() {
+  
   }
 
 }
