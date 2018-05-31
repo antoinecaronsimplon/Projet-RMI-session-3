@@ -2,9 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { ArrayComponent } from '../array/array.component';
-import { AdminComponent } from '../admin/admin.component';
-import { CommandeComponent } from '../commande/commande.component';
-import { ConnexionComponent } from '../connexion/connexion.component';
+import { AdminComponent} from '../admin/admin.component';
+import {CommandeComponent} from '../commande/commande.component';
+import {ConnexionComponent} from '../connexion/connexion.component';
+import { ArchiveComponent} from '../archive/archive.component';
 import { StatisticsComponent } from '../statistics/statistics.component';
 
 const routes: Routes = [
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'commande', component: CommandeComponent},
   { path: 'stats', component: StatisticsComponent},
   { path: '', component: ConnexionComponent },
-  
+  { path: 'archive', component: ArchiveComponent},
+
 ];
 
 @NgModule({
