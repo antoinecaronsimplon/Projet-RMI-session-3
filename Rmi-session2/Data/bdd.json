@@ -35,7 +35,7 @@
 		 "essai": "Oui",
 		 "destlivraison": "Synchosanté",
 		 "step"	: [1,1,1,1,1,0]
-		}
+		},
 		{"date": "15/01/18",
 		 "numcommande": "97645678",
 		 "numcptclient": "2347618",
@@ -47,7 +47,7 @@
 		 "essai": "non",
 		 "destlivraison": "Docteur Caron",
 		 "step"	: [1,1,1,1,1,0]
-		}
+		},
 		{"date": "22/01/18",
 		 "numcommande": "88657578",
 		 "numcptclient": "5627618",
@@ -59,7 +59,7 @@
 		 "essai": "Oui",
 		 "destlivraison": "Dr Fontaine",
 		 "step"	: [1,1,1,0,0,0]
-		}
+		},
 		{"date": "05/02/18",
 		 "numcommande": "97888578",
 		 "numcptclient": "1633618",
@@ -71,7 +71,7 @@
 		 "essai": "non",
 		 "destlivraison": "Projet Santé",
 		 "step"	: [1,0,0,0,0,0]
-		}
+		},
 		{"date": "01/01/18",
 		 "numcommande": "56787578",
 		 "numcptclient": "1600018",
@@ -83,7 +83,7 @@
 		 "essai": "non",
 		 "destlivraison": "Kiki-oreille",
 		 "step"	: [1,1,1,0,0,0]
-		}
+		},
 		{"date": "14/01/18",
 		 "numcommande": "97656778",
 		 "numcptclient": "1622218",
@@ -95,7 +95,7 @@
 		 "essai": "Oui",
 		 "destlivraison": "hopital de Rodez",
 		 "step"	: [1,1,1,1,0,0]
-		}
+		},
 		{"date": "14/03/18",
 		 "numcommande": "00657500",
 		 "numcptclient": "1620000",
@@ -107,7 +107,7 @@
 		 "essai": "Oui",
 		 "destlivraison": "St Marie",
 		 "step"	: [1,1,0,0,0,0]
-		}
+		},
 		{"date": "15/04/18",
 		 "numcommande": "10057578",
 		 "numcptclient": "1234567",
