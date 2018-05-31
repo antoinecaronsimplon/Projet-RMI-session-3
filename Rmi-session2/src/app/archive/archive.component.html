@@ -1,25 +1,14 @@
 <app-header></app-header>
 
+<div class="title">
+	<h2>Archives Commandes</h2>
+</div>
 <main id=" liste-commande">
-	<div class="container">
-		<div class="row pt-4 pb-4 justify-content-end">
-			<h1 class="col-8 title">{{titre}}</h1>
-		</div>	
-	</div>
 	<div class="container mt-5 input-group">
-	  <!-- <div class="row input-group-prepend">
-	     <div class="col input-group-text text-commande" id="#">N° Commande:</div>
-	  </div> -->
 	  <input type="text" placeholder="N° Com. recherche" class="col-2 form-control">
 	  <button class="btn-primary col-1">OK</button>
 	</div>
 	<div class="container pt-2">
-		<div class=" row mr-1 justify-content-end">
-			<button class="btn-primary col-1 active" data-filter="*">ADV</button>
-			<button class="btn-primary col-2 " data-filter="parametrage">Parametrage</button>
-			<button class="btn-primary col-2 " data-filter="hard">Hardware</button>
-			<button class="btn-primary col-2 " data-filter="logistique">Logistique</button>
-		</div>
 		<div class="row">
 			<div class="col-12 tableau-structure">
 				<div class="tableau-content">
@@ -32,7 +21,6 @@
 						      <th scope="col-2">No. Commande</th>
 						      <th scope="col-2">No. Cpt Client</th>
 						      <th scope="col-2">Nom Client</th>
-						      <th scope="col-2">ST / BCB / Crt / Parm / Prepa / Livr</th>
 						    </tr>
 						    <tr>
 		      					<th scope="row">1</th>
@@ -40,28 +28,6 @@
 								<td>18927578</td>
 								<td>8027618</td>
 								<td>Mme Pierre</td>
-								<td>
-									<div class="row">
-										<div class="col-1">
-											<div class="step"></div>
-										</div>
-										<div class=" col-1 ">
-											<div class="step"></div>
-										</div>
-										<div class=" col-1 ">
-											<div class="step"></div>
-										</div>
-										<div class=" col-1 ">
-											<div class="step"></div>
-										</div>
-										<div class=" col-1 ">
-											<div class="step"></div>
-										</div>
-										<div class=" col-1">
-											<div class="step red"></div>
-										</div>
-									</div>
-								</td>
 		    				</tr>
 		    				<tr>
 		      					<th scope="row">2</th>
@@ -69,7 +35,6 @@
 								<td>18927578</td>
 								<td>8027618</td>
 								<td>Mme Pierre</td>
-								<td>****</td>
 		    				</tr>
 		    				<tr>
 		      					<th scope="row">3</th>
@@ -77,7 +42,6 @@
 								<td>18927578</td>
 								<td>8027618</td>
 								<td>Mme Pierre</td>
-								<td>****</td>
 		    				</tr>
 		    				<tr>
 		      					<th scope="row">2</th>
@@ -85,7 +49,6 @@
 								<td>18927578</td>
 								<td>8027618</td>
 								<td>Mme Pierre</td>
-								<td>****</td>
 		    				</tr>
 		    				<tr>
 		      					<th scope="row">2</th>
@@ -93,7 +56,6 @@
 								<td>18927578</td>
 								<td>8027618</td>
 								<td>Mme Pierre</td>
-								<td>****</td>
 		    				</tr>
 		    				<tr>
 		      					<th scope="row">2</th>
@@ -101,7 +63,6 @@
 								<td>18927578</td>
 								<td>8027618</td>
 								<td>Mme Pierre</td>
-								<td>****</td>
 		    				</tr>
 					  </thead>
 					</table>
@@ -109,23 +70,5 @@
 				</div>
 			</div>
 		</div>
-	<!-- <nav aria-label="Page navigation example">
-  		<ul class="pagination">
-    		<li class="page-item">
-      			<a class="page-link" href="#" aria-label="Previous">
-       			 <span aria-hidden="true">&laquo;</span>
-        		 <span class="sr-only">Previous</span>
-      			</a>
-    		</li>
-    		<li class="page-item"><a class="page-link" href="#">1</a></li>
-    		<li class="page-item"><a class="page-link" href="#">2</a></li>
-    		<li class="page-item"><a class="page-link" href="#">3</a></li>
-    		<li class="page-item"><a class="page-link" href="#" aria-label="Next">
-        	<span aria-hidden="true">&raquo;</span>
-        	<span class="sr-only">Next</span>
-      		</a>
-    		</li>
- 	 	</ul>
-	</nav> -->
 </div>
 </main>
