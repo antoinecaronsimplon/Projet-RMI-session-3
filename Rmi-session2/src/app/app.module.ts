@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 
 // Service 
+import { DataService } from './service/data.service';
 
 // Component
 import { AppComponent } from './app.component';
@@ -50,7 +51,7 @@ library.add(faHome);
     AppRoutingModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

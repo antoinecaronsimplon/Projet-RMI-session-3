@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpModule } from '@angular/http';
-import { UserService } from '../service/user.service';
 import { HttpClient} from '@angular/common/http';
+import { DataService } from '../service/data.service';
+
 
 @Component({
   selector: 'app-array',
@@ -11,11 +12,13 @@ import { HttpClient} from '@angular/common/http';
 export class ArrayComponent implements OnInit {
 
 	titre = 'Liste de Commande';
-  data = 'bdd.json';
-  constructor( ) { }
+  public commande = [];
+
+  constructor(private dataCommande: DataService) { }
  
   ngOnInit() {
-  
+    this.dataCommande.getData()
+        .subscribe(data => this.commande = data);
   }
 
 }
