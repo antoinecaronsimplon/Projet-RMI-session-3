@@ -1,14 +1,23 @@
-<div class="général container">
-  <div class="logo row">
-    <img class="logo-img" src="../../assets/img/logo_rmi.png" alt="Logo RM Ingénieurie">
+<div class="container-fluid content">
+  <div class="logo row rounded mx-auto d-block">
+    <img class="logo img-fluid" src="../../assets/img/logo_rmi.png" alt="Logo_RMI_responsive">
   </div>
-  <div class="connexion row">
-    <form action="liste-commandes.html">
-      <label for="id">Votre identifiant:</label>
-      <input type="text" name="id" id="id" placeholder="Identifiant">
-      <label for="id">Votre Mots de passe:</label>
-      <input type="password" name="passowrd" placeholder="Mots de passe">
-      <input type="submit" value="Connexion" class="connexion-button">
-    </form>
-  </div>
+  <form class="form-group form mx-auto col-sm-3 col-offset-6 centered" action="array">
+    <div class="form-group">
+      <!-- <label for="id">Identifiant:</label> -->
+      <input class="form-control" type="text" name="username" id="validationDefaultUsername" placeholder="Identifiant">
+      <div class="invalid-feedback">
+        Identifiant incorrect.
+      </div>
+    </div>  
+    <div class="form-group">
+      <!-- <label for="id">Mots de passe:</label> -->
+      <input class="form-control" type="password" name="passowrd" id="validationDefaultPassword" placeholder="Mot de passe">
+      <div class="invalid-feedback">
+        Mot de passe incorrect
+      </div>
+    </div>
+    <!-- <input class="btn btn-primary form-control" type="submit" value="Connexion"> -->
+    <button class="btn btn-primary rounded mx-auto d-block" type="submit" value="Connexion">Connexion</button>
+  </form>
 </div>
