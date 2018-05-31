@@ -20,6 +20,7 @@ import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 import { faFolderOpen } from '@fortawesome/free-solid-svg-icons';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { ArchiveComponent } from './archive/archive.component';
+import { StatisticsComponent } from './statistics/statistics.component';
 
 
 library.add(faChartBar);
@@ -36,7 +37,8 @@ library.add(faHome);
     CommandeComponent,
     AdminComponent,
     ConnexionComponent,
-    ArchiveComponent
+    ArchiveComponent,
+    StatisticsComponent
   ],
   imports: [
     BrowserModule,
