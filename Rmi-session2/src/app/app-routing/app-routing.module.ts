@@ -5,13 +5,15 @@ import { ArrayComponent } from '../array/array.component';
 import { AdminComponent} from '../admin/admin.component';
 import {CommandeComponent} from '../commande/commande.component';
 import {ConnexionComponent} from '../connexion/connexion.component';
+import { ArchiveComponent} from '../archive/archive.component';
 
 const routes: Routes = [
   { path: 'admin', component: AdminComponent },
   { path: 'array', component: ArrayComponent },
   { path: 'commande', component: CommandeComponent},
   { path: '', component: ConnexionComponent },
-  
+  { path: 'archive', component: ArchiveComponent},
+
 ];
 
 @NgModule({
