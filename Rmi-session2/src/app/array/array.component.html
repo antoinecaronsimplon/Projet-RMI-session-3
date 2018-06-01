@@ -60,7 +60,7 @@
 										<div class=" col-1">
 											<div class="step red"></div>
 										</div>
-										<button class=" btn-primary col-2 align-self-end ml-5 " action="commande" data-filter="*">Modifier</button>
+										<a  href="commande" data-filter="*" title="Edit"><fa-icon [icon]="['fas', 'edit']"></fa-icon></a>
 									</div>
 								</td>
 		    				</tr>
@@ -113,7 +113,7 @@
 	</div>
 	<div>
 		
-			<li>{{commande.commandes[1] | json}}</li>
+			<li>{{ commande.commandes[1] | json }}</li>
 	</div>
 </main>
 
