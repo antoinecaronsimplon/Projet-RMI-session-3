@@ -112,8 +112,11 @@
 		</div>
 	</div>
 	<div>
-		
-			<li>{{ commande.commandes[1] | json }}</li>
+			<ul>
+				<li ngFor='let commande of commandes' >
+					{{ commande[commandes] }}
+				</li>
+			</ul>
 	</div>
 </main>
 
