@@ -26,13 +26,13 @@
 					<div>
 					<table id="tableau" class="table table-striped">
 						<thead>
-						    <tr>
+						    <tr class="">
 						  	  <th scope="#">#</th>
 						      <th scope="col-2">Date</th>
 						      <th scope="col-2">No. Commande</th>
 						      <th scope="col-2">No. Cpt Client</th>
 						      <th scope="col-2">Nom Client</th>
-						      <th scope="col-1">ST / BCB / Crt / Parm / Prepa / Livr</th>
+						      <th scope="col-1">ST       BCB / Crt / Parm / Prepa / Livr</th>
 						    </tr>
 						    <tr>
 		      					<th scope="row">1</th>
@@ -41,7 +41,7 @@
 								<td>8027618</td>
 								<td>Mme Pierre</td>
 								<td>
-									<div class="row">
+									<div class="row justify-content-between">
 										<div class="col-1">
 											<div class="step"></div>
 										</div>
@@ -60,6 +60,7 @@
 										<div class=" col-1">
 											<div class="step red"></div>
 										</div>
+										<button class=" btn-primary col-2 align-self-end ml-5 " action="commande" data-filter="*">Modifier</button>
 									</div>
 								</td>
 		    				</tr>
@@ -109,24 +110,10 @@
 				</div>
 			</div>
 		</div>
-	<!-- <nav aria-label="Page navigation example">
-  		<ul class="pagination">
-    		<li class="page-item">
-      			<a class="page-link" href="#" aria-label="Previous">
-       			 <span aria-hidden="true">&laquo;</span>
-        		 <span class="sr-only">Previous</span>
-      			</a>
-    		</li>
-    		<li class="page-item"><a class="page-link" href="#">1</a></li>
-    		<li class="page-item"><a class="page-link" href="#">2</a></li>
-    		<li class="page-item"><a class="page-link" href="#">3</a></li>
-    		<li class="page-item"><a class="page-link" href="#" aria-label="Next">
-        	<span aria-hidden="true">&raquo;</span>
-        	<span class="sr-only">Next</span>
-      		</a>
-    		</li>
- 	 	</ul>
-	</nav> -->
-</div>
+	</div>
+	<div>
+		
+			<li>{{commande.commandes[1] | json}}</li>
+	</div>
 </main>
 
