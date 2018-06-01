@@ -4,6 +4,10 @@
 	padding-top: 25px;
 }
 
+.tableau-content {
+	text-align: center;
+}
+
 tr:nth-child(2n){
 	background-color:#f2f2f2;
 }
