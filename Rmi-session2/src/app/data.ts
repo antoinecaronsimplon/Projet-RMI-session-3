@@ -9,5 +9,5 @@ export interface IData{
     credit: string,
     essai: string,
     destlivraison: string,
-    step: object
+    step: object,
 }

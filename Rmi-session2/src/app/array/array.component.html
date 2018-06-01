@@ -60,10 +60,15 @@
 										<div class=" col-1">
 											<div class="step red"></div>
 										</div>
-										<button class=" btn-primary col-2 align-self-end ml-5 " action="commande" data-filter="*">Modifier</button>
+										<a  href="commande" data-filter="*" title="Edit"><fa-icon [icon]="['fas', 'edit']"></fa-icon></a>
 									</div>
 								</td>
 		    				</tr>
+		    				<tr><th scope="row">1</th>
+							    <!-- <td *ngFor="let liste_commande of liste_commandes"> {{liste_commande}} </td> -->
+								<td>18927578</td>
+								<td>8027618</td>
+								<td>Mme Pierre</td></tr>
 					  </thead>
 					</table>
 					</div>
@@ -73,8 +78,10 @@
 	</div>
 	<div>
 		
+
 			<li>{{liste_commandes.commandes[1].date | json}}</li>
-			<li *ngFor="let liste_commande of liste_commandes" > {{liste_commande.commandes[1].date | json}} </li>
+			<!-- <li *ngFor="let liste_commande of liste_commandes" > {{liste_commande.commandes[1].date | json}} </li>
+			<li>{{ commande.commandes[1] | json }}</li> -->
 	</div>
 </main>
 
