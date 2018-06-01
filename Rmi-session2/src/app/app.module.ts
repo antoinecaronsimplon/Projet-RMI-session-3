@@ -14,6 +14,8 @@ import { ArrayComponent } from './array/array.component';
 import { CommandeComponent } from './commande/commande.component';
 import { AdminComponent } from './admin/admin.component';
 import { ConnexionComponent } from './connexion/connexion.component';
+import { ArchiveComponent } from './archive/archive.component';
+import { StatisticsComponent } from './statistics/statistics.component';
 
 // Fontawesome
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -23,16 +25,14 @@ import { faCog } from '@fortawesome/free-solid-svg-icons';
 import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 import { faFolderOpen } from '@fortawesome/free-solid-svg-icons';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
-import { ArchiveComponent } from './archive/archive.component';
-import { StatisticsComponent } from './statistics/statistics.component';
-
-
+import { faEdit } from '@fortawesome/free-solid-svg-icons';
 
 library.add(faChartBar);
 library.add(faCog);
 library.add(faSignOutAlt);
 library.add(faFolderOpen);
 library.add(faHome);
+library.add(faEdit);
 
 @NgModule({
   declarations: [
