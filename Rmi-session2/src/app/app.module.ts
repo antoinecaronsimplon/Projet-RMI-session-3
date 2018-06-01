@@ -2,6 +2,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+
+// Service 
+import { DataService } from './service/data.service';
 
 // Component
 import { AppComponent } from './app.component';
@@ -23,6 +27,7 @@ import { ArchiveComponent } from './archive/archive.component';
 import { StatisticsComponent } from './statistics/statistics.component';
 
 
+
 library.add(faChartBar);
 library.add(faCog);
 library.add(faSignOutAlt);
@@ -38,14 +43,15 @@ library.add(faHome);
     AdminComponent,
     ConnexionComponent,
     ArchiveComponent,
-    StatisticsComponent
+    StatisticsComponent,
   ],
   imports: [
     BrowserModule,
     FontAwesomeModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
