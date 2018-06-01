@@ -12,13 +12,13 @@ import { DataService } from '../service/data.service';
 export class ArrayComponent implements OnInit {
 
 	titre = 'Liste de Commande';
-  public commande = [];
+  public liste_commandes = [];
 
   constructor(private dataCommande: DataService) { }
  
   ngOnInit() {
     this.dataCommande.getData()
-        .subscribe(data => this.commande = data);
+        .subscribe(data => this.liste_commandes = data);
   }
 
 }

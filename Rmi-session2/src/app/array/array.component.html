@@ -28,7 +28,7 @@
 						<thead>
 						    <tr class="">
 						  	  <th scope="#">#</th>
-						      <th scope="col-2">Date</th>
+						      <th scope="col-2" >Date</th>
 						      <th scope="col-2">No. Commande</th>
 						      <th scope="col-2">No. Cpt Client</th>
 						      <th scope="col-2">Nom Client</th>
@@ -36,7 +36,7 @@
 						    </tr>
 						    <tr>
 		      					<th scope="row">1</th>
-							    <td>12/01/18</td>
+							    <!-- <td *ngFor="let liste_commande of liste_commandes"> {{liste_commande}} </td> -->
 								<td>18927578</td>
 								<td>8027618</td>
 								<td>Mme Pierre</td>
@@ -64,46 +64,6 @@
 									</div>
 								</td>
 		    				</tr>
-		    				<tr>
-		      					<th scope="row">2</th>
-							    <td>12/01/18</td>
-								<td>18927578</td>
-								<td>8027618</td>
-								<td>Mme Pierre</td>
-								<td>****</td>
-		    				</tr>
-		    				<tr>
-		      					<th scope="row">3</th>
-							    <td>12/01/18</td>
-								<td>18927578</td>
-								<td>8027618</td>
-								<td>Mme Pierre</td>
-								<td>****</td>
-		    				</tr>
-		    				<tr>
-		      					<th scope="row">2</th>
-							    <td>12/01/18</td>
-								<td>18927578</td>
-								<td>8027618</td>
-								<td>Mme Pierre</td>
-								<td>****</td>
-		    				</tr>
-		    				<tr>
-		      					<th scope="row">2</th>
-							    <td>12/01/18</td>
-								<td>18927578</td>
-								<td>8027618</td>
-								<td>Mme Pierre</td>
-								<td>****</td>
-		    				</tr>
-		    				<tr>
-		      					<th scope="row">2</th>
-							    <td>12/01/18</td>
-								<td>18927578</td>
-								<td>8027618</td>
-								<td>Mme Pierre</td>
-								<td>****</td>
-		    				</tr>
 					  </thead>
 					</table>
 					</div>
@@ -113,7 +73,8 @@
 	</div>
 	<div>
 		
-			<li>{{commande.commandes[1] | json}}</li>
+			<li>{{liste_commandes.commandes[1].date | json}}</li>
+			<li *ngFor="let liste_commande of liste_commandes" > {{liste_commande.commandes[1].date | json}} </li>
 	</div>
 </main>
 
