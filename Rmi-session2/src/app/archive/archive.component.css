@@ -3,3 +3,11 @@
 	color: #555;
 	padding-top: 25px;
 }
+
+tr:nth-child(2n){
+	background-color:#f2f2f2;
+}
+
+tr:hover {
+	background-color: #bbcde5;
+}
