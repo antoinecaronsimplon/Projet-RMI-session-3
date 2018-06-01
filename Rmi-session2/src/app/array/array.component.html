@@ -13,12 +13,13 @@
 	  <button class="btn-primary col-1">OK</button>
 	</div>
 	<div class="container pt-2">
-		<div class=" row mr-1 justify-content-end">
-			<button class="btn-primary col-1 active" data-filter="*">ADV</button>
-			<button class="btn-primary col-2 " data-filter="parametrage">Parametrage</button>
-			<button class="btn-primary col-2 " data-filter="hard">Hardware</button>
-			<button class="btn-primary col-2 " data-filter="logistique">Logistique</button>
+		<div class="row mr-1 justify-content-end">
+			<button class=" btn-primary col-1 " data-filter="*">ADV</button>
+			<button class=" btn-primary col-2 " data-filter="parametrage">Parametrage</button>
+			<button class=" btn-primary col-2 " data-filter="hard">Hardware</button>
+			<button class=" btn-primary col-2 " data-filter="logistique">Logistique</button>
 		</div>
+
 		<div class="row">
 			<div class="col-12 tableau-structure">
 				<div class="tableau-content">
@@ -26,81 +27,258 @@
 					<table id="tableau" class="table table-striped">
 						<thead>
 						    <tr>
-						  	  <th scope="#">#</th>
-						      <th scope="col-2">Date</th>
-						      <th scope="col-2">No. Commande</th>
-						      <th scope="col-2">No. Cpt Client</th>
-						      <th scope="col-2">Nom Client</th>
-						      <th scope="col-1">ST / BCB / Crt / Parm / Prepa / Livr</th>
+						  	  <th class="align-middle text-center" scope="#">#</th>
+						      <th class="align-middle text-center" scope="col-2">Date</th>
+						      <th class="align-middle text-center" scope="col-2">No. Commande</th>
+						      <th class="align-middle text-center" scope="col-2">No. Cpt Client</th>
+						      <th class="align-middle text-center" scope="col-2">Nom Client</th>
+							  <th class="align-middle text-center" scope="col-2">ST</th>
+							  <th class="align-middle text-center" scope="col-2">BCB</th>
+							  <th class="align-middle text-center" scope="col-2">Crt</th>
+							  <th class="align-middle text-center" scope="col-2">Parm</th>
+							  <th class="align-middle text-center" scope="col-2">Prepa</th>
+							  <th class="align-middle text-center" scope="col-2">Livr</th>
 						    </tr>
 						    <tr>
-		      					<th scope="row">1</th>
-							    <td>12/01/18</td>
-								<td>18927578</td>
-								<td>8027618</td>
-								<td>Mme Pierre</td>
-								<td>
-									<div class="row">
-										<div class="col-1">
-											<div class="step"></div>
-										</div>
-										<div class=" col-1 ">
-											<div class="step"></div>
-										</div>
-										<div class=" col-1 ">
-											<div class="step"></div>
-										</div>
-										<div class=" col-1 ">
-											<div class="step"></div>
-										</div>
-										<div class=" col-1 ">
-											<div class="step"></div>
-										</div>
-										<div class=" col-1">
-											<div class="step red"></div>
-										</div>
+		      					<th class="align-middle text-center" scope="row">1</th>
+							    <td class="align-middle text-center">12/01/18</td>
+								<td class="align-middle text-center">18927578</td>
+								<td class="align-middle text-center">8027618</td>
+								<td class="align-middle text-center">Mme Pierre</td>
+								<td class="align-middle">
+									<div class="col-1">
+										<div class="step"></div>
 									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1 ">
+										<div class="step"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1 ">
+										<div class="step"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1 ">
+										<div class="step"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1 ">
+										<div class="step"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1">
+										<div class="step red"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<a  href="commande" data-filter="*"><fa-icon [icon]="['fas', 'edit']"></fa-icon></a>
 								</td>
 		    				</tr>
 		    				<tr>
-		      					<th scope="row">2</th>
-							    <td>12/01/18</td>
-								<td>18927578</td>
-								<td>8027618</td>
-								<td>Mme Pierre</td>
-								<td>****</td>
+		      					<th class="align-middle text-center" scope="row">2</th>
+							    <td class="align-middle text-center">12/01/18</td>
+								<td class="align-middle text-center">18927578</td>
+								<td class="align-middle text-center">8027618</td>
+								<td class="align-middle text-center">Mme Pierre</td>
+								<td class="align-middle">
+									<div class="col-1">
+										<div class="step"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1 ">
+										<div class="step"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1 ">
+										<div class="step"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1 ">
+										<div class="step red"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1 ">
+										<div class="step red"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1">
+										<div class="step red"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<a  href="commande" data-filter="*"><fa-icon [icon]="['fas', 'edit']"></fa-icon></a>
+								</td>
+		    				
 		    				</tr>
 		    				<tr>
-		      					<th scope="row">3</th>
-							    <td>12/01/18</td>
-								<td>18927578</td>
-								<td>8027618</td>
-								<td>Mme Pierre</td>
-								<td>****</td>
+		      					<th class="align-middle text-center" scope="row">3</th>
+							    <td class="align-middle text-center">12/01/18</td>
+								<td class="align-middle text-center">18927578</td>
+								<td class="align-middle text-center">8027618</td>
+								<td class="align-middle text-center">Mme Pierre</td>
+								<td class="align-middle">
+									<div class="col-1">
+										<div class="step"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1 ">
+										<div class="step red"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1 ">
+										<div class="step red"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1 ">
+										<div class="step red"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1 ">
+										<div class="step red"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1">
+										<div class="step red"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<a  href="commande" data-filter="*"><fa-icon [icon]="['fas', 'edit']"></fa-icon></a>
+								</td>
 		    				</tr>
 		    				<tr>
-		      					<th scope="row">2</th>
-							    <td>12/01/18</td>
-								<td>18927578</td>
-								<td>8027618</td>
-								<td>Mme Pierre</td>
-								<td>****</td>
+		      					<th class="align-middle text-center" scope="row">2</th>
+							    <td class="align-middle text-center">12/01/18</td>
+								<td class="align-middle text-center">18927578</td>
+								<td class="align-middle text-center">8027618</td>
+								<td class="align-middle text-center">Mme Pierre</td>
+								<td class="align-middle">
+									<div class="col-1">
+										<div class="step"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1 ">
+										<div class="step"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1 ">
+										<div class="step"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1 ">
+										<div class="step"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1 ">
+										<div class="step"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1">
+										<div class="step red"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<a  href="commande" data-filter="*"><fa-icon [icon]="['fas', 'edit']"></fa-icon></a>
+								</td>
 		    				</tr>
 		    				<tr>
-		      					<th scope="row">2</th>
-							    <td>12/01/18</td>
-								<td>18927578</td>
-								<td>8027618</td>
-								<td>Mme Pierre</td>
-								<td>****</td>
+		      					<th class="align-middle text-center" scope="row">2</th>
+							    <td class="align-middle text-center">12/01/18</td>
+								<td class="align-middle text-center">18927578</td>
+								<td class="align-middle text-center">8027618</td>
+								<td class="align-middle text-center">Mme Pierre</td>
+								<td class="align-middle">
+									<div class="col-1">
+										<div class="step"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1 ">
+										<div class="step"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1 ">
+										<div class="step"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1 ">
+										<div class="step"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1 ">
+										<div class="step red"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1">
+										<div class="step red"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<a  href="commande" data-filter="*"><fa-icon [icon]="['fas', 'edit']"></fa-icon></a>
+								</td>
 		    				</tr>
 		    				<tr>
-		      					<th scope="row">2</th>
-							    <td>12/01/18</td>
-								<td>18927578</td>
-								<td>8027618</td>
-								<td>Mme Pierre</td>
-								<td>****</td>
+		      					<th class="align-middle text-center" scope="row">2</th>
+							    <td class="align-middle text-center">12/01/18</td>
+								<td class="align-middle text-center">18927578</td>
+								<td class="align-middle text-center">8027618</td>
+								<td class="align-middle text-center">Mme Pierre</td>
+								<td class="align-middle">
+									<div class="col-1">
+										<div class="step"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1 ">
+										<div class="step"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1 ">
+										<div class="step"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1 ">
+										<div class="step red"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1 ">
+										<div class="step red"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<div class=" col-1">
+										<div class="step red"></div>
+									</div>
+								</td>
+								<td class="align-middle">
+									<a  href="commande" data-filter="*"><fa-icon [icon]="['fas', 'edit']"></fa-icon></a>
+								</td>
 		    				</tr>
 					  </thead>
 					</table>
@@ -108,24 +286,6 @@
 				</div>
 			</div>
 		</div>
-	<!-- <nav aria-label="Page navigation example">
-  		<ul class="pagination">
-    		<li class="page-item">
-      			<a class="page-link" href="#" aria-label="Previous">
-       			 <span aria-hidden="true">&laquo;</span>
-        		 <span class="sr-only">Previous</span>
-      			</a>
-    		</li>
-    		<li class="page-item"><a class="page-link" href="#">1</a></li>
-    		<li class="page-item"><a class="page-link" href="#">2</a></li>
-    		<li class="page-item"><a class="page-link" href="#">3</a></li>
-    		<li class="page-item"><a class="page-link" href="#" aria-label="Next">
-        	<span aria-hidden="true">&raquo;</span>
-        	<span class="sr-only">Next</span>
-      		</a>
-    		</li>
- 	 	</ul>
-	</nav> -->
-</div>
+	</div>
 </main>
 

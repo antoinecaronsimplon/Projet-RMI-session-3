@@ -1,65 +1,63 @@
-
 <app-header></app-header>
-<div class="container" style="text-align: center;">
+<div class="container">
 	<div>
-		<h2>Panel Administrateur</h2>
-		<a href="liste-commandes.html">Retour</a>
+		<h2 class="text-center">Panel Administrateur</h2>
 	</div>
 
-	<div class="main-admin">
-		
-		<div class="dropdown mb-5" > poste : 
-		  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		    Sélectionnez
-		  </button>
-	  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-		    <a class="dropdown-item" href="#">Type poste 1</a>
-		    <a class="dropdown-item" href="#">Type poste 2</a>
-		    <a class="dropdown-item" href="#">Type poste </a>
-	  	</div>
+	<div class="row">
+		<div class="jumbotron form-control col-md-12">
+			<form class="text-center">
+			    Poste :
+			      <select>
+			        <option>Option 1</option>
+			        <option>Option 2</option>
+			        <option>Option 3</option>
+			        <option>Option 4</option>
+			        <option>Option 5</option>
+			        <option>Option 6</option>
+			      </select>
+			      <button type="submit" class="btn btn-primary mt-3 mb-3">Submit</button>
+			</form>
+			<form class="text-center mt-5 mb-3 ml-5 mr-5 border border-dark bg bg-white"><h3 class="bg bg-dark text-white">Autorisations</h3>
+				<div class="form-check mt-3 mb-3">
+					<input type="checkbox" class="form-check-input" id="exampleCheck1">
+					<label class="form-check-label" for="exampleCheck1">ST</label>
+				</div>
+				<div class="form-check mt-3 mb-3">
+					<input type="checkbox" class="form-check-input" id="exampleCheck1">
+					<label class="form-check-label" for="exampleCheck1">BCB</label>
+				</div>
+				<div class="form-check mt-3 mb-3">
+					<input type="checkbox" class="form-check-input" id="exampleCheck1">
+					<label class="form-check-label" for="exampleCheck1">step 3</label>
+				</div>
+				<div class="form-check mt-3 mb-3">
+					<input type="checkbox" class="form-check-input" id="exampleCheck1">
+					<label class="form-check-label" for="exampleCheck1">Step 4</label>
+				</div>
+				<div class="form-check mt-3 mb-3">
+					<input type="checkbox" class="form-check-input" id="exampleCheck1">
+					<label class="form-check-label" for="exampleCheck1">Step 5</label>
+				</div>
+				<div class="form-check mt-3 mb-3">
+					<input type="checkbox" class="form-check-input" id="exampleCheck1">
+					<label class="form-check-label" for="exampleCheck1">Livraison</label>
+				</div>
+					<button type="submit" class="btn btn-primary mt-3 mb-3">Submit</button>
+			</form>
+			<form class="ml-5 mr-5">
+				<label for="exampleFormControlTextarea1">Commentaire : </label>
+    			<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="votre commentaire ici"></textarea>	
+			</form>
 
-	  	<div class="form-check">step 1 :
-		  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-		  <label class="form-check-label" for="defaultCheck1">
-		  </label>
-		</div>
-		<div class="form-check">step 2 :
-		  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-		  <label class="form-check-label" for="defaultCheck1">
-		  </label>
-		</div>
-		<div class="form-check">
-		  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-		  <label class="form-check-label" for="defaultCheck1">
-		  </label>
-		</div>
-		<div class="form-check">step 3 :
-		  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-		  <label class="form-check-label" for="defaultCheck1">
-		  </label>
-		</div>
-		<div class="form-check">step 4 : 
-		  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-		  <label class="form-check-label" for="defaultCheck1">
-		  </label>
-		</div>
-		<div class="form-check">step 5 :
-		  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-		  <label class="form-check-label" for="defaultCheck1">
-		  </label>
-		</div>
-		<div class="form-check">step 6 :
-		  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-		  <label class="form-check-label" for="defaultCheck1">
-		  </label>
-		</div>
-
-			
-
-	  	<div>
-		  	<button type="button" class="btn btn-primary mt-5 mb-5">Valider</button>
-			<button type="button" class="btn btn-secondary">Supprimer les droits</button>
 		</div>
 	</div>
+	
+
+		<!--form class="col-md-4"> 
+				Commentaire : <textarea id="textarea" class="form-control"></textarea>
+			    <button>Envoyer</button>
+		</form--> 
+  	
 </div>
 

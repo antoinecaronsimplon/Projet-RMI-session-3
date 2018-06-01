@@ -12,7 +12,6 @@
 	padding-bottom: 7px;
 	padding-left: 10px;
 	background-color: #e7e7e7;
-
 }
 
 .text-commande{
@@ -20,6 +19,7 @@
 	color: white;
 	width: 100%;
 }
+
 .step{
 	margin-left: 14px;
 	margin-right: 14px;
@@ -35,3 +35,12 @@
 .red {
 	background-color: red;	
 }
+
+tr:nth-child(2n){
+	background-color:#f2f2f2;
+}
+
+tr:hover {
+	background-color: #bbcde5;
+}
+
