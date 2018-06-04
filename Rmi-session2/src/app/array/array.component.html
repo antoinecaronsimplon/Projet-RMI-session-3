@@ -39,12 +39,12 @@
 							  <th class="align-middle text-center" scope="col-2">Prepa</th>
 							  <th class="align-middle text-center" scope="col-2">Livr</th>
 						    </tr>
-						    <tr>
+						    <tr *ngFor="let liste_commande of liste_commandes; let i = index" >
 		      					<th class="align-middle text-center" scope="row">1</th>
-							    <td class="align-middle text-center">12/01/18</td>
-								<td class="align-middle text-center">18927578</td>
-								<td class="align-middle text-center">8027618</td>
-								<td class="align-middle text-center">Mme Pierre</td>
+							    <td class="align-middle text-center">{{ liste_commande.date }}</td>
+								<td class="align-middle text-center">{{ liste_commande.numcommande }}</td>
+								<td class="align-middle text-center">{{ liste_commande.numcptclient }}</td>
+								<td class="align-middle text-center">{{ liste_commande.nomclient }}</td>
 								<td class="align-middle">
 									<div class="col-1">
 										<div class="step"></div>
@@ -79,207 +79,7 @@
 									<a  href="commande" data-filter="*"><fa-icon [icon]="['fas', 'edit']"></fa-icon></a>
 								</td>
 		    				</tr>
-		    				<tr>
-		      					<th class="align-middle text-center" scope="row">2</th>
-							    <td class="align-middle text-center">12/01/18</td>
-								<td class="align-middle text-center">18927578</td>
-								<td class="align-middle text-center">8027618</td>
-								<td class="align-middle text-center">Mme Pierre</td>
-								<td class="align-middle">
-									<div class="col-1">
-										<div class="step"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<div class=" col-1 ">
-										<div class="step"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<div class=" col-1 ">
-										<div class="step"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<div class=" col-1 ">
-										<div class="step red"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<div class=" col-1 ">
-										<div class="step red"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<div class=" col-1">
-										<div class="step red"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<a  href="commande" data-filter="*"><fa-icon [icon]="['fas', 'edit']"></fa-icon></a>
-								</td>
 		    				
-		    				</tr>
-		    				<tr>
-		      					<th class="align-middle text-center" scope="row">3</th>
-							    <td class="align-middle text-center">12/01/18</td>
-								<td class="align-middle text-center">18927578</td>
-								<td class="align-middle text-center">8027618</td>
-								<td class="align-middle text-center">Mme Pierre</td>
-								<td class="align-middle">
-									<div class="col-1">
-										<div class="step"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<div class=" col-1 ">
-										<div class="step red"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<div class=" col-1 ">
-										<div class="step red"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<div class=" col-1 ">
-										<div class="step red"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<div class=" col-1 ">
-										<div class="step red"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<div class=" col-1">
-										<div class="step red"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<a  href="commande" data-filter="*"><fa-icon [icon]="['fas', 'edit']"></fa-icon></a>
-								</td>
-		    				</tr>
-		    				<tr>
-		      					<th class="align-middle text-center" scope="row">2</th>
-							    <td class="align-middle text-center">12/01/18</td>
-								<td class="align-middle text-center">18927578</td>
-								<td class="align-middle text-center">8027618</td>
-								<td class="align-middle text-center">Mme Pierre</td>
-								<td class="align-middle">
-									<div class="col-1">
-										<div class="step"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<div class=" col-1 ">
-										<div class="step"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<div class=" col-1 ">
-										<div class="step"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<div class=" col-1 ">
-										<div class="step"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<div class=" col-1 ">
-										<div class="step"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<div class=" col-1">
-										<div class="step red"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<a  href="commande" data-filter="*"><fa-icon [icon]="['fas', 'edit']"></fa-icon></a>
-								</td>
-		    				</tr>
-		    				<tr>
-		      					<th class="align-middle text-center" scope="row">2</th>
-							    <td class="align-middle text-center">12/01/18</td>
-								<td class="align-middle text-center">18927578</td>
-								<td class="align-middle text-center">8027618</td>
-								<td class="align-middle text-center">Mme Pierre</td>
-								<td class="align-middle">
-									<div class="col-1">
-										<div class="step"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<div class=" col-1 ">
-										<div class="step"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<div class=" col-1 ">
-										<div class="step"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<div class=" col-1 ">
-										<div class="step"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<div class=" col-1 ">
-										<div class="step red"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<div class=" col-1">
-										<div class="step red"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<a  href="commande" data-filter="*"><fa-icon [icon]="['fas', 'edit']"></fa-icon></a>
-								</td>
-		    				</tr>
-		    				<tr>
-		      					<th class="align-middle text-center" scope="row">2</th>
-							    <td class="align-middle text-center">12/01/18</td>
-								<td class="align-middle text-center">18927578</td>
-								<td class="align-middle text-center">8027618</td>
-								<td class="align-middle text-center">Mme Pierre</td>
-								<td class="align-middle">
-									<div class="col-1">
-										<div class="step"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<div class=" col-1 ">
-										<div class="step"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<div class=" col-1 ">
-										<div class="step"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<div class=" col-1 ">
-										<div class="step red"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<div class=" col-1 ">
-										<div class="step red"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<div class=" col-1">
-										<div class="step red"></div>
-									</div>
-								</td>
-								<td class="align-middle">
-									<a  href="commande" data-filter="*"><fa-icon [icon]="['fas', 'edit']"></fa-icon></a>
-								</td>
-		    				</tr>
 					  </thead>
 					</table>
 					</div>
@@ -288,7 +88,3 @@
 		</div>
 	</div>
 </main>
-
-<ul>
- 	<li *ngFor="let user of liste_commandes">{{user.commandes[0].date | json}}</li>
- </ul>
