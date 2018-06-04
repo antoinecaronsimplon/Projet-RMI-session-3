@@ -277,7 +277,7 @@
 									</div>
 								</td>
 								<td class="align-middle">
-									<a  href="commande" data-filter="*"><fa-icon [icon]="['fas', 'edit']"></fa-icon></a>
+									<a  href="commande" ><fa-icon [icon]="['fas', 'edit']"></fa-icon></a>
 								</td>
 		    				</tr>
 					  </thead>
@@ -287,5 +287,11 @@
 			</div>
 		</div>
 	</div>
+	<div >
+		<h2>Data parse</h2>
+		<ul *ngFor="let liste_commande of liste_commandes; let i = index">
+			<li > {{ liste_commande.nomclient }}</li>
+			
+		</ul>
+	</div>
 </main>
-
