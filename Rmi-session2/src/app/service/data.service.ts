@@ -7,7 +7,7 @@ import { Observable, of } from 'rxjs';
 @Injectable()
 
 export class DataService {
-    private _url: string = '../assets/data/bdd.json';
+    private _url: string = '../assets/data/list_commande.json';
 
     constructor(private http: HttpClient){}
 

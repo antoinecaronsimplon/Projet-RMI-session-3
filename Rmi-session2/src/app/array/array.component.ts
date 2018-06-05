@@ -9,16 +9,19 @@ import { DataService } from '../service/data.service';
   templateUrl: './array.component.html',
   styleUrls: ['./array.component.css']
 })
+
 export class ArrayComponent implements OnInit {
 
 	titre = 'Liste de Commande';
   public liste_commandes = [];
-
+  
   constructor(private dataCommande: DataService) { }
- 
+  
   ngOnInit() {
     this.dataCommande.getData()
-        .subscribe(data => this.liste_commandes = data);
+        .subscribe(data => { console.log(this.liste_commandes = data )});
+    
+
   }
 
 }

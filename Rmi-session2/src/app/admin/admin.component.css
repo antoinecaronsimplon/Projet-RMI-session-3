@@ -1,5 +1,4 @@
 
-
 input {
 	margin-left: 150px;
 }
@@ -11,5 +10,15 @@ table {
 	margin-left: auto;
 	background: #fff;
 	border: black;
+}
+
+.title {
+	text-align: center;
+	color: #555;
+	padding-top: 25px;
+}
+
+h3 {
+    margin-top: 1rem;
 }
 

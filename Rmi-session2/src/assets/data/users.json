@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Grégory",
+        "userid": "000111",
+        "password" : "comgreg1"
+    },
+    {
+        "name": "Antoine",
+        "userid": "111000",
+        "password": "comant1"
+    },
+    {
+        "name": "Frédéric",
+        "userid": "110011",
+        "password": "comfref1"
+    },
+    {
+        "name" : "Céline",
+        "userid": "001100",
+        "password": "comcel1"
+    },{
+        "name" : "Christelle",
+        "userid": "010101",
+        "password": "comchri1"
+    }
+]
