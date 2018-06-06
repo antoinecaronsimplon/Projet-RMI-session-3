@@ -1,0 +1,26 @@
+[
+    {
+    "date" : "28-03-2018",
+    "numOrder": "1234",
+    "numCodeCustom": "4111184907",
+    "nameCustom": "Mme Pierre" ,   
+    "CCIA_REV": "Micka",       
+    "urgence": "recup le 12/04/2018" ,    
+    "info": "Prevenir JMM quand tablette OK",         
+    "eligiST": false,     
+    "st" : true,         
+    "bcb": "true",          
+    "transfert": "infi+4000 411130XXX",     
+    "colorEtui": "anis",    
+    "params": "07/04/2018",        
+    "prepa": "12/04/2018",       
+    "update" : "boolean",     
+    "credit": "OK",         
+    "try": true,
+    "destinataire": "Micka",    
+    "numTracking": "string",     
+    "expedition": "en attente",     
+    "returnTracking": "string",  
+    "stock": [1,0,1,0]  
+    }
+]
