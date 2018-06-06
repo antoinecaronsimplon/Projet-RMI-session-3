@@ -5,7 +5,8 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 
 // Service 
-import { DataService } from './service/data.service';
+import { ListService } from './service/list.service';
+import { ArchiveService } from './service/archive.service';
 
 // Component
 import { AppComponent } from './app.component';
@@ -51,7 +52,7 @@ library.add(faEdit);
     AppRoutingModule,
     HttpClientModule,
   ],
-  providers: [DataService],
+  providers: [ListService, ArchiveService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
