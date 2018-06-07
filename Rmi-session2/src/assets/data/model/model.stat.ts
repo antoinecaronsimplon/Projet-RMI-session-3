@@ -1,5 +1,5 @@
 export interface IDataStat{
-    dateStart: string,
-    dateEnd: string,
-    param: string,
+    dateStart: string,   // date début
+    dateEnd: string,     // date fin
+    param: string,       // paramatre 
 }
