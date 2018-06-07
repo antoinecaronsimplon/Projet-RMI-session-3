@@ -15,11 +15,24 @@
 	background-color: red;	
 }
 
-tbody tr:nth-child(4n+1),
-tbody tr:nth-child(4n+2){
+/*table.sortable tbody tr:nth-child(4n+1),
+table.sortable tbody tr:nth-child(4n+2){
 	background-color:#f2f2f2;
+}*/
+
+tbody tr:hover {
+	background-color: #bbcde5;
 }
 
-.tr-style:hover {
-	background-color: #bbcde5;
+table.sortable tbody {
+    counter-reset: sortabletablescope;
+}
+table.sortable thead tr::before {
+    content: "";
+    display: table-cell;
+}
+table.sortable tbody tr::before {
+    content: counter(sortabletablescope);
+    counter-increment: sortabletablescope;
+    display: table-cell;
 }

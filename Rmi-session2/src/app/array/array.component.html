@@ -55,10 +55,10 @@
 				<div class="col-12 tableau-structure">
 					<div class="tableau-content">
 						<div>
-							<table id="tableau" class="table sortable">
+							<table id="tableau" class="sortable table ">
 								<thead>
 								    <tr>
-								  	  <th class="align-middle text-center" scope="#">#</th>
+								  	  <!-- <th class="align-middle text-center" scope="#">#</th> -->
 								      <th class="align-middle text-center" scope="col-2">Date</th>
 								      <th class="align-middle text-center" scope="col-2">No. Commande</th>
 								      <th class="align-middle text-center" scope="col-2">No. Cpt Client</th>
@@ -76,7 +76,7 @@
 							  <tbody >
 							  		<ng-container  *ngFor="let liste_commande of liste_commandes; let i = index">
 									    <tr class="tr-style">		    			
-					      					<th class="align-middle text-center" scope="row">{{i+1}}</th>
+					      					<!-- <th class="align-middle text-center" scope="row">{{i+1}}</th> -->
 										    <td class="align-middle text-center">{{ liste_commande.date }}</td>
 											<td class="align-middle text-center">{{ liste_commande.numcommande }}</td>
 											<td class="align-middle text-center">{{ liste_commande.numcptclient }}</td>
@@ -150,4 +150,3 @@
 		</div>
 	</div>
 </main>
-
