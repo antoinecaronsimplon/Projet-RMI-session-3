@@ -28,6 +28,7 @@
     "font-awesome": "^4.7.0",
     "rxjs": "^6.0.0",
     "save": "^2.3.2",
+    "sortablejs": "^1.7.0",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
