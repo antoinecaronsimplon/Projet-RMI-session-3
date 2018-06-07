@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 
 // Service 
+import { DataService } from './service/data.service';
+import { DataStat } from './service/stat.service';
 import { ListService } from './service/list.service';
 import { ArchiveService } from './service/archive.service';
 import { ConnexionService } from './service/connexion.service';
@@ -28,6 +30,7 @@ import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 import { faFolderOpen } from '@fortawesome/free-solid-svg-icons';
 import { faClipboardList } from '@fortawesome/free-solid-svg-icons';
 import { faEdit } from '@fortawesome/free-solid-svg-icons';
+import { OrdernumberComponent } from './ordernumber/ordernumber.component';
 
 library.add(faChartBar);
 library.add(faCog);
@@ -46,6 +49,7 @@ library.add(faEdit);
     ConnexionComponent,
     ArchiveComponent,
     StatisticsComponent,
+    OrdernumberComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,11 +57,15 @@ library.add(faEdit);
     AppRoutingModule,
     HttpClientModule,
   ],
+<<<<<<< HEAD
+  providers: [DataService, DataStat],
+=======
   providers: [
     ConnexionService, 
     ListService, 
     ArchiveService
   ],
+>>>>>>> 53bc6070d55e4186b662d8da050248eec191b1d8
   bootstrap: [AppComponent]
 })
 export class AppModule { }
