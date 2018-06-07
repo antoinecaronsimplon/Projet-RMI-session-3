@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 
 // Service 
-import { DataService } from './service/data.service';
 import { DataStat } from './service/stat.service';
 import { ListService } from './service/list.service';
 import { ArchiveService } from './service/archive.service';

@@ -1,0 +1,24 @@
+[
+    {
+        "date" : "Date",                
+        "numOrder": "number",           
+        "numCodeCustom": "number",      
+        "nameCustom": "string",       
+        "CCIA_REV": "string",           
+        "emergency": "boolean",         
+        "info": "string",               
+        "subcontracting": "object",     
+        "bcb": "boolean",             
+        "transfert": "string",          
+        "color": "string",             
+        "params": "string",             
+        "prepa": "string",              
+        "update" : "boolean",          
+        "credit": "boolean",           
+        "try": "boolean",              
+        "shipment": "string",          
+        "tracking": "object",          
+        "expedition": "string",         
+        "order": "object"
+    }
+]
