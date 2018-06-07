@@ -78,9 +78,9 @@
 									    <tr class="tr-style">		    			
 					      					<!-- <th class="align-middle text-center" scope="row">{{i+1}}</th> -->
 										    <td class="align-middle text-center">{{ liste_commande.date }}</td>
-											<td class="align-middle text-center">{{ liste_commande.numcommande }}</td>
-											<td class="align-middle text-center">{{ liste_commande.numcptclient }}</td>
-											<td class="align-middle text-center">{{ liste_commande.nomclient }}</td>
+											<td class="align-middle text-center">{{ liste_commande.numOrder }}</td>
+											<td class="align-middle text-center">{{ liste_commande.numCodeCustom }}</td>
+											<td class="align-middle text-center">{{ liste_commande.nameCustom}}</td>
 											<td class="align-middle">
 												<div class="col-1">
 													<div class="step"></div>
@@ -125,12 +125,12 @@
 					    					<td colspan="12">
 					    						<div class="container">
 					    							<div class="row">
-					    								<div class="col-3"> Commercial: {{ liste_commande.commercial }}</div>
-							    						<div  class="col-4"> Livraison: {{ liste_commande.destlivraison }}</div>
-							    						<div class="col-3"> Couleur de l'étui: {{ liste_commande.couleur }}</div>
+					    								<div class="col-3"> Commercial: {{ liste_commande.CCIA_REV }}</div>
+							    						<div  class="col-4"> Livraison: {{ liste_commande.destinataire }}</div>
+							    						<div class="col-3"> Couleur de l'étui: {{ liste_commande.colorEtui}}</div>
 							    						<div class="w-100"></div>
 							    						<div class="col-3"> Crédit: {{ liste_commande.credit }}</div>
-							    						<div  class="col-3"> Essai: {{ liste_commande.essai }}</div>
+							    						<div  class="col-3"> Essai: {{ liste_commande.try }}</div>
 					    							</div>
 					    						</div>			    				
 					    					</td>
