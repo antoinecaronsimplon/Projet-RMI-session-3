@@ -6,7 +6,7 @@ import { Observable, of } from 'rxjs';
 
 @Injectable()
 
-export class DataService {
+export class ConnexionService {
     private _url: string = '../assets/data/data_test/user.data.json'; // @TODO: tranform environnement
 
     constructor(private http: HttpClient){}
