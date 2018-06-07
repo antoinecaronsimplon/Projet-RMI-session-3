@@ -15,7 +15,8 @@
 	background-color: red;	
 }
 
-tr:nth-child(2n){
+tbody tr:nth-child(4n+1),
+tbody tr:nth-child(4n+2){
 	background-color:#f2f2f2;
 }
 
