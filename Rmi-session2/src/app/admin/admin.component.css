@@ -1,24 +1,3 @@
-
-input {
-	margin-left: 150px;
-}
-
-
 table {
 	width: 45%;
-	margin-right: auto;
-	margin-left: auto;
-	background: #fff;
-	border: black;
 }
-
-.title {
-	text-align: center;
-	color: #555;
-	padding-top: 25px;
-}
-
-h3 {
-    margin-top: 1rem;
-}
-
