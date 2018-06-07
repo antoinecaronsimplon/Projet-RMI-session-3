@@ -7,6 +7,7 @@ import { CommandeComponent } from '../commande/commande.component';
 import { ConnexionComponent } from '../connexion/connexion.component';
 import { ArchiveComponent } from '../archive/archive.component';
 import { StatisticsComponent } from '../statistics/statistics.component';
+import { OrdernumberComponent } from '../ordernumber/ordernumber.component';
 
 
 const routes: Routes = [
@@ -16,7 +17,7 @@ const routes: Routes = [
   { path: 'stats', component: StatisticsComponent },
   { path: '', component: ConnexionComponent },
   { path: 'archive', component: ArchiveComponent },
-
+  { path: 'numerocommande' , component: OrdernumberComponent },
 ];
 
 @NgModule({
