@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 // Service 
 import { DataService } from './service/data.service';
+import { DataStat } from './service/stat.service';
 
 // Component
 import { AppComponent } from './app.component';
@@ -26,6 +27,7 @@ import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 import { faFolderOpen } from '@fortawesome/free-solid-svg-icons';
 import { faClipboardList } from '@fortawesome/free-solid-svg-icons';
 import { faEdit } from '@fortawesome/free-solid-svg-icons';
+import { OrdernumberComponent } from './ordernumber/ordernumber.component';
 
 library.add(faChartBar);
 library.add(faCog);
@@ -44,6 +46,7 @@ library.add(faEdit);
     ConnexionComponent,
     ArchiveComponent,
     StatisticsComponent,
+    OrdernumberComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,7 +54,7 @@ library.add(faEdit);
     AppRoutingModule,
     HttpClientModule,
   ],
-  providers: [DataService],
+  providers: [DataService, DataStat],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
