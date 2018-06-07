@@ -58,55 +58,55 @@
 							<table id="tableau" class="sortable table ">
 								<thead>
 								    <tr>
-								  	  <!-- <th class="align-middle text-center" scope="#">#</th> -->
-								      <th class="align-middle text-center" scope="col-2">Date</th>
-								      <th class="align-middle text-center" scope="col-2">No. Commande</th>
-								      <th class="align-middle text-center" scope="col-2">No. Cpt Client</th>
-								      <th data-defaultsign="AZ" class="align-middle text-center" scope="col-2">Nom Client</th>
-									  <th class="align-middle text-center" scope="col-2"><abbr title="Sous traitance">ST</abbr></th>
-									  <th class="align-middle text-center" scope="col-2"><abbr title="Licence">BCB</abbr></th>
-									  <th class="align-middle text-center" scope="col-2"><abbr title="Controle">Crt</abbr></th>
-									  <th class="align-middle text-center" scope="col-2"><abbr title="Paramétrage">Parm</abbr></th>
-									  <th class="align-middle text-center" scope="col-2"><abbr title="Préparation">Prepa</abbr></th>
-									  <th class="align-middle text-center" scope="col-2"><abbr title="Livraison">Livr</abbr></th>
-									  <th class="align-middle text-center" scope="col-2">Inter</th>
+								  	  <!-- <th class="align-top text-center" scope="#">#</th> -->
+								      <th class="align-top text-center" scope="col-2">Date</th>
+								      <th class="align-top text-center" scope="col-2">No. Commande</th>
+								      <th class="align-top text-center" scope="col-2">No. Cpt Client</th>
+								      <th data-defaultsign="AZ" class="align-top text-center" scope="col-2">Nom Client</th>
+									  <th class="align-top text-center" scope="col-2"><abbr title="Sous traitance">ST</abbr></th>
+									  <th class="align-top text-center" scope="col-2"><abbr title="Licence">BCB</abbr></th>
+									  <th class="align-top text-center" scope="col-2"><abbr title="Controle">Crt</abbr></th>
+									  <th class="align-top text-center" scope="col-2"><abbr title="Paramétrage">Parm</abbr></th>
+									  <th class="align-top text-center" scope="col-2"><abbr title="Préparation">Prepa</abbr></th>
+									  <th class="align-top text-center" scope="col-2"><abbr title="Livraison">Livr</abbr></th>
+									  <th class="align-top text-center" scope="col-2">Inter</th>
 								    </tr>
 								    
 							  </thead>
 							  <tbody >
 							  		<ng-container  *ngFor="let liste_commande of liste_commandes; let i = index">
 									    <tr class="tr-style">		    			
-					      					<!-- <th class="align-middle text-center" scope="row">{{i+1}}</th> -->
-										    <td class="align-middle text-center">{{ liste_commande.date }}</td>
-											<td class="align-middle text-center">{{ liste_commande.numOrder }}</td>
-											<td class="align-middle text-center">{{ liste_commande.numCodeCustom }}</td>
-											<td class="align-middle text-center">{{ liste_commande.nameCustom}}</td>
-											<td class="align-middle">
+					      					<!-- <th class="align-top text-center" scope="row">{{i+1}}</th> -->
+										    <td class="align-top text-center">{{ liste_commande.date }}</td>
+											<td class="align-top text-center">{{ liste_commande.numOrder }}</td>
+											<td class="align-top text-center">{{ liste_commande.numCodeCustom }}</td>
+											<td class="align-top text-center">{{ liste_commande.nameCustom}}</td>
+											<td class="align-top">
 												<div class="col-1">
 													<div class="step"></div>
 												</div>
 											</td>
-											<td class="align-middle">
+											<td class="align-top">
 												<div class=" col-1 ">
 													<div class="step"></div>
 												</div>
 											</td>
-											<td class="align-middle">
+											<td class="align-top">
 												<div class=" col-1 ">
 													<div class="step"></div>
 												</div>
 											</td>
-											<td class="align-middle">
+											<td class="align-top">
 												<div class=" col-1 ">
 													<div class="step"></div>
 												</div>
 											</td>
-											<td class="align-middle">
+											<td class="align-top">
 												<div class=" col-1 ">
 													<div class="step"></div>
 												</div>
 											</td>
-											<td class="align-middle">
+											<td class="align-top">
 												<div class=" col-1">
 													<div class="step red"></div>
 												</div>
@@ -114,27 +114,28 @@
 
 											<td id="accordion-{{ i }}">
 											  <div class="card">
-											        <button id="heading-{{ i }}" class="btn btn-primary collapsed" data-toggle="collapse" attr.data-target="#collapse-{{ i }}" aria-expanded="false" attr.aria-controls="collapse-{{ i }}">
+											        <button (click)="clickMe()" id="heading-{{ i }}" class="btn btn-primary collapsed" data-toggle="collapse" attr.data-target="#collapse-{{ i }}" aria-expanded="false" attr.aria-controls="collapse-{{ i }}">
 											          Details
 											        </button>
 											  </div>
-											</td>
-					    				</tr>
-
-					    				<tr id="collapse-{{ i }}" class="collapse" attr.aria-labelledby="heading-{{ i }}" attr.data-parent="#accordion-{{ i }}">
-					    					<td colspan="12">
-					    						<div class="container">
+											  <div id="collapse-{{ i }}" class="collapse container show-info" attr.aria-labelledby="heading-{{ i }}" attr.data-parent="#accordion-{{ i }}" colspan="12">
 					    							<div class="row">
 					    								<div class="col-3"> Commercial: {{ liste_commande.CCIA_REV }}</div>
-							    						<div  class="col-4"> Livraison: {{ liste_commande.destinataire }}</div>
-							    						<div class="col-3"> Couleur de l'étui: {{ liste_commande.colorEtui}}</div>
+							    						<div  class="col-4"> Expédition : {{ liste_commande.shipment}}</div>
+							    						<div class="col-3"> Couleur de l'étui: {{ liste_commande.color}}</div>
 							    						<div class="w-100"></div>
 							    						<div class="col-3"> Crédit: {{ liste_commande.credit }}</div>
 							    						<div  class="col-3"> Essai: {{ liste_commande.try }}</div>
+							    						<div class="w-100"></div>
+							    						<div class="col-12">Info : {{ liste_commande.info }}</div>
 					    							</div>
-					    						</div>			    				
-					    					</td>
+					    						</div>
+											</td>
 					    				</tr>
+
+					    				
+					    									    				
+					    				
 				    				<!-- <td>
 				    					<a  href="commande" data-filter="*"><fa-icon [icon]="['fas', 'edit']"></fa-icon></a>
 				    				</td> -->
