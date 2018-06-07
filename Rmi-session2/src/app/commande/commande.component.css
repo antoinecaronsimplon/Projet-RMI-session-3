@@ -2,3 +2,7 @@ fieldset{
 	background-color: #6464641a;
 	border: solid 1px grey;
 }
+
+label{
+	text-align: right;
+}

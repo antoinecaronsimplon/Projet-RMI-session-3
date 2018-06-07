@@ -34,13 +34,13 @@
 				<input class="col-3" type="text" name="" id="" value=""/>
 			</div>
 			<div class="row mb-2">
+				<label for="" class="col-2">Dest'Livraison</label>
+				<input class="col-3" type="text" name="" id="" value=""/>
 				<label for="" class="col-2">Crédit</label>
 				<select class="col-1">
 					<option class="select--yes" value="#">Oui</option>
 					<option class="select--no" value="#">Non</option>
 				</select>
-				<label for="" class="col-2">Dest'Livraison</label>
-				<input class="col-3" type="text" name="" id="" value=""/>
 			</div>
 
 			<div class="row mb-2">
@@ -54,7 +54,7 @@
 					<option class="select--yes" value="#">Oui</option>
 					<option class="select--no" value="#">Non</option>
 				</select>
-				<label for="" class="col-2">Réception BCB</label>
+				<label for="" class="col-3">Réception BCB</label>
 				<select class="col-2">
 					<option class="select--received" value="#">Reçu</option>
 					<option class="select--noreceived" value="#">Non-reçu</option>
@@ -92,10 +92,15 @@
 		<legend>Parametre</legend>
 		<div>
 			<div class="row mb-2">
-				<label for="" class="col-2">Param</label>
-				<input class="col-3" type="text" name="" id="" value=""/>
-				<label for="" class="col-2">Technicien</label>
-				<input class="col-3" type="text" name="" id="" value=""/>
+				<label for="" class="col-3">Date du paramétrage</label>
+				<input class="col-2" type="date" name="" id="" value=""/>
+				<label for="" class="col-3">Nom du Technicien</label>
+				<select class="col-2">
+					<option class="select--green" value="#">Technicien 1</option>
+					<option class="select--yellow" value="#">Technicien 2</option>
+					<option class="select--red" value="#">Technicien 3</option>
+					<option class="select--black" value="#">Technicien 4</option>
+				</select>
 			</div>
 		</div>
 	</fieldset>
@@ -104,10 +109,15 @@
 		<legend>Hardware</legend>
 		<div>
 			<div class="row mb-2">
-				<label for="" class="col-2">Préparation</label>
-				<input class="col-3" type="text" name="" id="" value=""/>
-				<label for="" class="col-2">Technicien</label>
-				<input class="col-3" type="text" name="" id="" value=""/>
+				<label for="" class="col-3">Date de la préparation</label>
+				<input class="col-2" type="date" name="" id="" value=""/>
+				<label for="" class="col-3">Nom du technicien</label>
+				<select class="col-2">
+					<option class="select--green" value="#">Technicien 1</option>
+					<option class="select--yellow" value="#">Technicien 2</option>
+					<option class="select--red" value="#">Technicien 3</option>
+					<option class="select--black" value="#">Technicien 4</option>
+				</select>
 			</div>
 			<div class="row mb-2">
 			</div>
@@ -118,12 +128,15 @@
 		<legend>Logistique</legend>
 		<div>
 			<div class="row mb-2">
-				<label for="" class="col-2">Num Tracking</label>
+				<label for="" class="col-2"> n° tracking</label>
 				<input class="col-1" type="text" name="" id="" value=""/>
 				<label for="" class="col-2">Date Expiration</label>
 				<input class="col-1" type="text" name="" id="" value=""/>
-				<label for="" class="col-2">Num Track Retour</label>
-				<input class="col-1 " type="text" name="" id="" value=""/>
+				<div class="w-100"></div>
+				<label for="" class="col-2">n° track Retour</label>
+				<input class="col-1" type="text" name="" id="" value=""/>
+				<label for="" class="col-2">ID tracking</label>
+				<input class="col-1" type="text" name="" id="" value=""/>
 			</div>
 			<div class="row mb-2">
 			</div>

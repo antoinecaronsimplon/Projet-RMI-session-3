@@ -5,10 +5,6 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 
 // Service 
-<<<<<<< HEAD
-
-=======
->>>>>>> b6771c2ed690b999abc781ead6d9c9429be5f0ab
 import { DataStat } from './service/stat.service';
 import { ListService } from './service/list.service';
 import { ArchiveService } from './service/archive.service';
@@ -60,10 +56,6 @@ library.add(faEdit);
     AppRoutingModule,
     HttpClientModule,
   ],
-<<<<<<< HEAD
-
-=======
->>>>>>> b6771c2ed690b999abc781ead6d9c9429be5f0ab
   providers: [
     ConnexionService, 
     ListService, 
