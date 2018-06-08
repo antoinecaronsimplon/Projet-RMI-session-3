@@ -62,6 +62,7 @@ library.add(faEdit);
     ArchiveService,
     DataStat
   ],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -8,12 +8,12 @@ import { ListService } from '../service/list.service';
   templateUrl: './array.component.html',
   styleUrls: ['./array.component.css']
 })
-
 export class ArrayComponent implements OnInit {
 
-	titre = 'Liste de Commande';
+  titre = 'Liste de Commande';
   public liste_commandes = [];
-  count = 0;
+  
+ 
   
   constructor(private dataCommande: ListService) { }
   
