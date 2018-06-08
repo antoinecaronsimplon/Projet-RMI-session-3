@@ -6,7 +6,23 @@
     },
     {
         "id": 54321,
-        "role": "Commercial",
-        "name": "Elise"
+        "role": "Hardware",
+        "name": "Louise"
+    },
+    {
+        "id": 54321,
+        "role": "Hardware",
+        "name": "Pierre"
+    },
+    {
+        "id": 54321,
+        "role": "Paramatre",
+        "name": "Jacque"
+    },
+    {
+        "id": 54321,
+        "role": "Paramatre",
+        "name": "Heureux"
     }
+
 ]
