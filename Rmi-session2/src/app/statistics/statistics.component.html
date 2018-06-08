@@ -1,26 +1,7 @@
 <app-header></app-header>
-<!-- <div class="stats">
-    <h1>Statistiques</h1>
-    <p>En cours de développement !</p>
-    <p>donnée: {{distStat}}</p>
-</div> -->
-
 <div class="stats container">
-    <h2 class="text-center">Statistique</h2>
-    <!-- <ul *ngFor="let distStats of distStat">
-        <li>
-            <span>{{ distStats.tablet }}</span>
-            <span>{{ distStats.model }}</span>
-            <span>{{ distStats.case }}</span>
-            <span>{{ distStats.color }}</span>
-            <span>{{ distStats.stock }}</span>
-            <div>
-                <div></div>
-            </div>
-        </li>
-    </ul> -->
-
-    <table class="table">
+    <h2 class="text-center mt-3 mb-3">Statistique</h2>
+    <table class="table mt-5 mb-5">
         <thead>
             <tr>
                 <th scope="col">Produit</th>
@@ -28,20 +9,12 @@
                 <th scope="col">Stock</th>
             </tr>
         </thead>
-        <tbody>
-            <tr *ngIf="distStat.stock > 10;else other_content" class="bg-danger" *ngFor="let distStats of distStat">
+        <tbody>                
+            <tr *ngFor="let distStats of distStat">                
                 <th scope="row">{{ distStats.product }}</th>
                 <td>{{ distStats.model }}</td>
-                <td>{{ distStats.stock }}</td>
-            <tr>
-            <ng-template #other_content>
-                <tr class="bg-danger" *ngFor="let distStats of distStat">
-                    <th scope="row">{{ distStats.product }}</th>
-                    <td>{{ distStats.model }}</td>
-                    <td>{{ distStats.stock }}</td>
-                <tr>
-            </ng-template>
-            
+                <td>{{ distStats.stock }}</td>               
+            <tr>     
         </tbody>
     </table>
 </div>

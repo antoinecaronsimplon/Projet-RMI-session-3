@@ -1,6 +1,6 @@
 [
     {
-        "date" : "2018-01-28",
+        "date" : "01-28-2018",
         "numOrder": 1234,
         "numCodeCustom": 4111184907,
         "nameCustom": "Mme Pierre" ,   
@@ -17,7 +17,7 @@
         "params": "07/04/2018",        
         "prepa": "12/04/2018",       
         "update" : false,     
-        "credit": true,         
+        "credit": false,         
         "try": true,
         "recipient": "Micka",        
         "shipment": "en attente",     

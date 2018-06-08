@@ -114,31 +114,36 @@
 
 											<td id="accordion-{{ i }}">
 											  <div class="card">
-											        <button (click)="clickMe()" id="heading-{{ i }}" class="btn btn-primary collapsed" data-toggle="collapse" attr.data-target="#collapse-{{ i }}" aria-expanded="false" attr.aria-controls="collapse-{{ i }}">
+											        <button  id="heading-{{ i }}" class="btn btn-primary collapsed" data-toggle="collapse" attr.data-target="#collapse-{{ i }}" aria-expanded="false" attr.aria-controls="collapse-{{ i }}">
 											          Details
 											        </button>
 											  </div>
 											  <div id="collapse-{{ i }}" class="collapse container show-info" attr.aria-labelledby="heading-{{ i }}" attr.data-parent="#accordion-{{ i }}" colspan="12">
-					    							<div class="row">
+					    							<div class="row pl-5 pb-3">
 					    								<div class="col-3"> Commercial: {{ liste_commande.CCIA_REV }}</div>
 							    						<div  class="col-4"> Expédition : {{ liste_commande.shipment}}</div>
 							    						<div class="col-3"> Couleur de l'étui: {{ liste_commande.color}}</div>
 							    						<div class="w-100"></div>
-							    						<div class="col-3"> Crédit: {{ liste_commande.credit }}</div>
-							    						<div  class="col-3"> Essai: {{ liste_commande.try }}</div>
+
+							    						<div  *ngIf="liste_commande.credit == true; else other_content_credit" class="col-3"> Crédit: oui</div>
+							    						<ng-template  #other_content_credit> <div class="col-3">Crédit: Non</div></ng-template>
+
+							    						<div *ngIf="liste_commande.try == true; else other_content_try" class="col-3"> Essai: oui </div>
+							    						<ng-template  #other_content_try> <div class="col-3">Essai: Non</div></ng-template>
+
 							    						<div class="w-100"></div>
-							    						<div class="col-12">Info : {{ liste_commande.info }}</div>
+							    						<div class="col-12 ">Info : {{ liste_commande.info }}</div>
 					    							</div>
 					    						</div>
 											</td>
+						    				<!-- <td>
+						    					<a  href="numerocommande" data-filter="*"><fa-icon [icon]="['fas', 'edit']"> </fa-icon></a>
+						    				</td> -->
 					    				</tr>
 
 					    				
 					    									    				
 					    				
-				    				<!-- <td>
-				    					<a  href="commande" data-filter="*"><fa-icon [icon]="['fas', 'edit']"></fa-icon></a>
-				    				</td> -->
 				    				</ng-container>
 				    			</tbody>
 							</table>

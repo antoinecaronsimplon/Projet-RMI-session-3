@@ -6,32 +6,32 @@
 		
 			<div class="row mb-2">
 				<label for="" class="col-2">Date</label>
-				<input class="col-3" type="text" readonly="readonly" name="" id="" value="28-04-2018"/>
+				<input class="col-3" type="date" readonly="readonly" name="" id="" value="{{liste_commandes[1]?.date}}"/>
 				<label for="" class="col-2">Transfert</label>
 				<input class="col-3" type="text" name="" id="" value=""/>
 			</div>
 			<div class="row mb-2">
 				<label for="" class="col-2">Num Commande</label>
-				<input class="col-3" type="text" readonly="readonly" name="" id="" value="097788646"/>
+				<input class="col-3" type="text" readonly="readonly" name="" id="" value="{{liste_commandes[1]?.numOrder}}"/>
 				<label for="" class="col-2">Info</label>
 				<input class="col-3" type="text" name="" id="" value=""/>
 			</div>
 			
 			<div class="row mb-2">
 				<label for="" class="col-2">Nom Client</label>
-				<input class="col-3" type="text" readonly="readonly" name="" id="" value="Mme Valérie"/>
+				<input class="col-3" type="text" readonly="readonly" name="" id="" value="{{liste_commandes[1]?.nameCustom}}"/>
 				<label for="" class="col-2">Dest'Livraison</label>
 				<input class="col-3" type="text" name="" id="" value=""/>
 			</div>
 
 			<div class="row mb-2">
 				<label for="" class="col-2">Num Compte Client</label>
-				<input class="col-3" type="text"  readonly="readonly" name="" id="" value="123456789"/>
+				<input class="col-3" type="text"  readonly="readonly" name="" id="" value="{{liste_commandes[1]?.numCodeCustom}}"/>
 				
 			</div>
 			<div class="row mb-2">
 				<label for="" class="col-2">Commercial/Rev</label>
-				<input class="col-3" type="text" readonly="readonly" name="" id="" value="Micka"/>
+				<input class="col-3" type="text" readonly="readonly" name="" id="" value="{{liste_commandes[1]?.CCIA_REV}}"/>
 				
 			</div>
 
@@ -98,11 +98,11 @@
 				<label for="" class="col-3">Date du paramétrage</label>
 				<input class="col-2" type="date" name="" id="" value=""/>
 				<label for="" class="col-3">Nom du Technicien</label>
-				<select class="col-2">
-					<option class="select--green" value="#">Technicien 1</option>
-					<option class="select--yellow" value="#">Technicien 2</option>
-					<option class="select--red" value="#">Technicien 3</option>
-					<option class="select--black" value="#">Technicien 4</option>
+				<select class="col-2" >
+					<option class="select--green"*ngFor="let liste_users of liste_user; let i = index" value="#">
+						{{liste_users.name}}
+					</option>
+					
 				</select>
 			</div>
 		</div>
@@ -116,10 +116,9 @@
 				<input class="col-2" type="date" name="" id="" value=""/>
 				<label for="" class="col-3">Nom du technicien</label>
 				<select class="col-2">
-					<option class="select--green" value="#">Technicien 1</option>
-					<option class="select--yellow" value="#">Technicien 2</option>
-					<option class="select--red" value="#">Technicien 3</option>
-					<option class="select--black" value="#">Technicien 4</option>
+					<option class="select--green"*ngFor="let liste_users of liste_user; let i = index" value="#">
+						{{liste_users.name}}
+					</option>
 				</select>
 			</div>
 			<div class="row mb-2">
