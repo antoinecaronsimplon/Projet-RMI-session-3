@@ -3,13 +3,10 @@
 	<h2 class="text-center mt-3 mb-3">Panel Administrateur</h2>
 	<form action="">
 		<div class="text-center mt-5 mb-5">
-			<select class="text-center">
-				<option>Utilisateur 1</option>
-				<option>Utilisateur 2</option>
-				<option>Utilisateur 3</option>
-				<option>Utilisateur 4</option>
-				<option>Utilisateur 5</option>
-				<option>Utilisateur 6</option>
+			<select class="col-2" >
+				<option class="select--green"*ngFor="let liste_users of liste_user; let i = index" value="#">
+					{{liste_users.name}}
+				</option>
 			</select>
 		</div>
 		<div class="table-responsive container">
