@@ -17,7 +17,7 @@
         "params": "07/04/2018",        
         "prepa": "12/04/2018",       
         "update" : false,     
-        "credit": true,         
+        "credit": false,         
         "try": true,
         "recipient": "Micka",        
         "shipment": "en attente",     
